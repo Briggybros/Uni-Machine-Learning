@@ -1,7 +1,7 @@
 
 % Default to the notebook output style
 
-
+    
 
 
 % Inherit from the specified cell style.
@@ -9,22 +9,26 @@
 
 
 
-
+    
 \documentclass[11pt]{article}
 
-
+    
+    
     \usepackage[T1]{fontenc}
     % Nicer default font (+ math font) than Computer Modern for most use cases
     \usepackage{mathpazo}
-    \usepackage{nips15submit_e}
 
     % Basic figure setup, for now with no caption control since it's done
     % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
     \usepackage{graphicx}
-
     % We will generate all images so they have a width \maxwidth. This means
     % that they will get their normal width if they fit onto the page, but
     % are scaled down if they would overflow the margins.
+    \makeatletter
+    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    \else\Gin@nat@width\fi}
+    \makeatother
+    \let\Oldincludegraphics\includegraphics
     % Set max figure width to be 80% of text width, for now hardcoded.
     \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
     % Ensure that by default, figures have no caption (until we provide a
@@ -34,7 +38,7 @@
     \DeclareCaptionLabelFormat{nolabel}{}
     \captionsetup{labelformat=nolabel}
 
-    \usepackage{adjustbox} % Used to constrain images to a maximum size
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
     \usepackage{xcolor} % Allow colors to be defined
     \usepackage{enumerate} % Needed for markdown enumerations to work
     \usepackage{geometry} % Used to adjust the document margins
@@ -49,17 +53,22 @@
     \usepackage{eurosym} % defines \euro
     \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
     \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
-    \usepackage{grffile} % extends the file name processing of package graphics
-                         % to support a larger range
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
     % The hyperref package gives us a pdf with properly built
     % internal navigation ('pdf bookmarks' for the table of contents,
     % internal cross-reference links, web links for URLs, etc.)
     \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
     \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
                                 % normalem makes italics be italics, not underlines
-    \usepackage{wrapfig}
-    \usepackage{subcaption}
+    
 
+    
+    
     % Colors for the hyperref package
     \definecolor{urlcolor}{rgb}{0,.145,.698}
     \definecolor{linkcolor}{rgb}{.71,0.21,0.01}
@@ -87,6 +96,7 @@
     % extracted from the output of `pandoc -s`
     \providecommand{\tightlist}{%
       \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
     % Add ',fontsize=\small' for more characters per line
     \newenvironment{Shaded}{}{}
     \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
@@ -103,7 +113,7 @@
     \newcommand{\RegionMarkerTok}[1]{{#1}}
     \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
     \newcommand{\NormalTok}[1]{{#1}}
-
+    
     % Additional commands for more recent versions of Pandoc
     \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
     \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
@@ -122,8 +132,8 @@
     \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
     \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
     \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
-
-
+    
+    
     % Define a nice break command that doesn't care if a line doesn't already
     % exist.
     \def\br{\hspace*{\fill} \\* }
@@ -132,12 +142,12 @@
     \def\lt{<}
     % Document parameters
     \title{Models}
-
-
-
+    
+    
+    
 
     % Pygments definitions
-
+    
 \makeatletter
 \def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
     \let\PY@ul=\relax \let\PY@tc=\relax%
@@ -245,9 +255,9 @@
 
 
 
-
+    
     % Prevent overflowing lines due to hard-to-break entities
-    \sloppy
+    \sloppy 
     % Setup hyperref package
     \hypersetup{
       breaklinks=true,  % so long urls are correctly broken across lines
@@ -257,18 +267,17 @@
       citecolor=citecolor,
       }
     % Slightly bigger margins than the latex defaults
-
+    
     \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
-
-
+    
+    
 
     \begin{document}
-
-
+    
+    
     \maketitle
 
-
-    \subsection*{Machine Learning
+    \section*{Machine Learning
 Coursework}\label{machine-learning-coursework}
 
 Ben Norris - bn15932\\
@@ -276,7 +285,7 @@ Bilal Kazi - bk15841\\
 Kyle Welch - kw15469\\
 Greg Sims - gs15687
 
-    \subsubsection*{1}\label{section}
+    \section*{1}\label{section}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi})}
@@ -298,7 +307,7 @@ Greg Sims - gs15687
   dimension.
 \end{enumerate}
 
-    \subsubsection*{2}\label{section}
+    \section*{2}\label{section}
 
 If we don't assume independence then we can't express the probability as
 a product of composite probabilities. We therefore have to express the
@@ -306,13 +315,13 @@ probability in terms of each element. \[
 p(\mathbf{Y} | f, \mathbf{X}) = p(\bigcap_i^N (y_i | f, x_i))
 \]
 
-    \subsubsection*{3}\label{section}
+    \section*{3}\label{section}
 
 \[
 p(\mathbf{Y} | \mathbf{X}, \mathbf{W}) = \prod_{n=1}^{N} N(\boldsymbol{y_i} | \boldsymbol{W}^T\boldsymbol{\phi}(\boldsymbol{x_n}), \sigma^2 I)
 \]
 
-    \subsubsection*{4}\label{section}
+    \section*{4}\label{section}
 
 Conjugate distributions occur when a prior and a posterior distribution
 are of the same family, in this case the prior is called a conjugate
@@ -326,18 +335,17 @@ need for integration which may be otherwise necessary. Additionally,
 conjugate priors can more easily show how a likelihood function updates
 the prior.
 
-    \subsubsection*{5}\label{section}
+    \section*{5}\label{section}
 
 A Gaussian distribution is parameterised on the L2 distance of a point
 from the mean of the distribution. If we encode the preference using L1
 norm it will change the shape of out prior (Laplace distribution). The
 change in shape of prior would also change the value of learned
 paramaters since different priors mean different things.
-\begin{center}
-\adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{./differntpriorshapes.png}
-\end{center}
-On the left is a
-prior encoded using L2 norm and right is prior encoded using L1 norm
+
+\adjustimage{max size={0.45\linewidth}{0.45\paperheight}}{differnt-prior-shapes.png}
+
+On the left is a prior encoded using L2 norm and right is prior encoded using L1 norm.
 
 As you can see in the image the shape of the prior determines the
 parameters that are learned. The L2 norm places an equal importance in
@@ -345,7 +353,7 @@ every direction whereas the L1 norm tends to bias parameters more toward
 the axes. This results in the L1 norm preferring certain dimension more
 than others.
 
-    \subsubsection*{6}\label{section}
+    \section*{6}\label{section}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi})}
@@ -405,7 +413,7 @@ conjugate prior, suggesting the posterior should be Gaussian.
   more than a constant and shouldn't affect the actual model.
 \end{enumerate}
 
-    \subsubsection*{7}\label{section}
+    \section*{7}\label{section}
 
 A non-parametric model is one that assumes the data distribution cannot
 be defined in terms of some finite parameters, and instead defines them
@@ -421,7 +429,7 @@ information the function contains grows as the amount of data grows,
 putting no bounds on the complexity and allowing the model to be more
 flexible.
 
-    \subsubsection*{8}\label{section}
+    \section*{8}\label{section}
 
 The prior is conditional on hyperparameter \(\theta\) which tunes the
 kernel function which in turn adjusts the covariance of the Gaussian
@@ -429,7 +437,7 @@ Process thus dictating the shape of the functions we prefer. This is
 useful as it allows us to control the types of functions from an
 infinite space of possible functions.
 
-    \subsubsection*{9}\label{section}
+    \section*{9}\label{section}
 
 This prior encodes all possible functions, and this can be shown by
 looking at the spherical gaussian as a long line of "slices". Each of
@@ -439,15 +447,14 @@ view the places we can take one of these slices as infinite, as the
 x-axis stretches from positive to negative infinity, and so we have an
 infinite function space.
 
-    \subsubsection*{10}\label{section}
-\begin{center}
-\adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{q10.png}
-\end{center}
+    \section*{10*}\label{section}
+
+\includegraphics{q10.png}
 \[p(\boldsymbol{Y}, \boldsymbol{X}, f, \boldsymbol{\theta}) = p(\boldsymbol{X}) p(\boldsymbol{\theta}) p(f|\boldsymbol{X},\boldsymbol{\theta})p(\boldsymbol{Y}|f)\]
 Assumptions: - All X's are independent, shown by the
 \(k(\pmb X, \pmb X)\)
 
-    \subsubsection*{11}\label{section}
+    \section*{11*}\label{section}
 
 Marginalisation is a way to remove a variable that we aren't interested
 in, such that the information we need from them isn't lost. We take the
@@ -467,7 +474,7 @@ dependent on both the input data (X) as well as \(\boldsymbol{\theta}\)
 and that different \(\boldsymbol{\theta}\) values will result in a
 different \(f\) that will give the maximum marginal liklihood.
 
-    \subsubsection*{12}\label{section}
+    \section*{12}\label{section}
 
 On the left is the visualisation of the prior/posterior and on the right
 you can see a sample of functions from the prior/posterior.\\
@@ -476,26 +483,20 @@ smaller and the functions seem to pass through the general area of the
 data point. On adding more data points the posterior starts to converge
 on the parameters and the functions move closer together and are very
 closely aligned to the direction of the data points.
-    \begin{center}
-    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_14_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-    \begin{center}
-    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_14_1.png}
-    \end{center}
-    { \hspace*{\fill} \\}
 
     \begin{center}
-    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_14_2.png}
+    \adjustimage{max size={0.45\linewidth}{0.45\paperheight}}{output_14_0.png}
+    \adjustimage{max size={0.45\linewidth}{0.45\paperheight}}{output_14_1.png}
     \end{center}
     { \hspace*{\fill} \\}
-
+    
     \begin{center}
-    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_14_3.png}
+    \adjustimage{max size={0.45\linewidth}{0.45\paperheight}}{output_14_2.png}
+    \adjustimage{max size={0.45\linewidth}{0.45\paperheight}}{output_14_3.png}
     \end{center}
     { \hspace*{\fill} \\}
-
-    \subsubsection*{13}\label{section}
+    
+    \section*{13}\label{section}
 
 The first plot has value of length scale equal to 1 while the second one
 has length scale equal to 2.\\
@@ -503,18 +504,17 @@ The length scale is directly proportional to the covariance of the
 Gaussian Process and we see that decreasing the value makes the
 functions noisier as the covariance decreases.
 
-The length scale encodes the assumption of smoothness of the function.
-    \begin{center}
-    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_16_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
+The length scale encodes the assumption of smoothness of the function
+
+
 
     \begin{center}
-    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_16_1.png}
+    \adjustimage{max size={0.45\linewidth}{0.45\paperheight}}{output_16_0.png}
+    \adjustimage{max size={0.45\linewidth}{0.45\paperheight}}{output_16_1.png}
     \end{center}
     { \hspace*{\fill} \\}
-
-    \subsubsection*{14}\label{section}
+    
+    \section*{14}\label{section}
 
 We can see that the samples from the posterior are less varied near the
 data points and as we move away from the data points the uncertainity
@@ -522,12 +522,14 @@ increases and the function starts to resemble the prior. This is
 desirable since it means that where we see data the model fits to the
 data and where no data is present it is represented by our prior belief
 but also has a high uncertainity.
+
+
     \begin{center}
-    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_18_0.png}
+    \adjustimage{max size={0.45\linewidth}{0.45\paperheight}}{output_18_0.png}
     \end{center}
     { \hspace*{\fill} \\}
-
-    \subsubsection*{15}\label{section}
+    
+    \section*{15}\label{section}
 
 The difference between a preference and an assumption is merely
 contextual. The overarching idea behind them is the same, however
@@ -537,7 +539,7 @@ term. Both of these terms allow is to improve on our prior in some way,
 whether it be that we are "assuming" something about our input data, or
 we actually have some kind of "preference" to what form it takes.
 
-    \subsubsection*{16}\label{section}
+    \section*{16}\label{section}
 
 The assumption we have encoded with this prior is that all the
 parameters are equally important, shown by the identity matrix as a
@@ -545,7 +547,7 @@ covariance matrix. Since there is no covariance between the separate
 parameters, we are showing they're all equally important and independent
 of each other.
 
-    \subsubsection*{17}\label{section}
+    \section*{17}\label{section}
 
 We know \(y = Wx + \mu + \epsilon\)
 
@@ -562,7 +564,7 @@ To derive the mean and covariance we get:
 This covariance shows that it's entirely in terms of W and no X, so we
 have removed X.
 
-    \subsubsection*{18}\label{section}
+    \section*{18}\label{section}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi})}
@@ -585,26 +587,26 @@ have removed X.
   different to our numerator.
 \end{enumerate}
 
-    \subsubsection*{19}\label{section}
+    \section*{19}\label{section}
 
-% \begin{enumerate}
-% \def\labelenumi{\alph{enumi})}
-% \item
-%   \(\mathcal{L}(\pmb W) = constant + log\)\textbar{}\(\pmb C(\pmb W)\)\textbar{}\
-%   + \sum\_\{i\}\^{}\{N\}
-%   (y\_i)\textsuperscript{T(\pmb C(\pmb W))}\{-1\}y\_i\$
-% \item
-%   \(\frac{\delta}{\delta\pmb W_{ij}}\log\)\textbar{}\(\pmb C\)\textbar{}\$
-%   = tr (\pmb C\^{}\{-1\}\frac{\delta\pmb C}{\delta\pmb W_{ij}})\$
-% \end{enumerate}
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  \(\mathcal{L}(\pmb W) = constant + log\)\textbar{}\(\pmb C(\pmb W)\)\textbar{}\$
+  + \sum\_\{i\}\^{}\{N\}
+  (y\_i)\textsuperscript{T(\pmb C(\pmb W))}\{-1\}y\_i\$
+\item
+  \(\frac{\delta}{\delta\pmb W_{ij}}\log\)\textbar{}\(\pmb C\)\textbar{}\$
+  = tr (\pmb C\^{}\{-1\}\frac{\delta\pmb C}{\delta\pmb W_{ij}})\$
+\end{enumerate}
 
 \(tr ( \pmb Y\pmb Y^T \frac{\delta\pmb C^{-1}}{\delta\pmb W_{ij}}) = tr ( \pmb Y\pmb Y^T (-\pmb C^{-1} \frac{\delta\pmb C}{\delta\pmb W_{ij}}\pmb C^{-1}))\)
 
-    \subsubsection*{20}\label{section}
+    \section*{20*}\label{section}
 
 Generally it's more simple to marginalise out \(f\) since a function can
-easily be incorporated into the model itself, if we still have the
-variables that parametrize that function included in the model. Since
+easily be encorporated into the model itself, if we still have the
+variables that paramatize that function included in the model. Since
 \(f\) only depends upon these parameters, it is therefore simple to
 marginalise. \(\boldsymbol{X}\) however can be much larger since it's
 the input data itself and should have some effect on the output
@@ -613,7 +615,7 @@ have to change every time for a new input which makes the process a lot
 more complex. It also doesn't remove the uncertainty introduced by an
 intermediate function such as \(f\).
 
-    \subsubsection*{21}\label{section}
+    \section*{21}\label{section}
 
 Our data was generated by first passing the x through a non-linear
 function and then passing that output through a linear function. The
@@ -624,12 +626,13 @@ one that we can visualise. Using our linear functions we can only learn
 the linear mapping of the data which means that what we are left with is
 the non-linear part of the Y which is a spiral since the non-linear part
 is described by {[}xsin(x), xcos(x){]}
+
     \begin{center}
-    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_26_2.png}
+    \adjustimage{max size={0.45\linewidth}{0.45\paperheight}}{output_26_2.png}
     \end{center}
     { \hspace*{\fill} \\}
-
-    \subsubsection*{22}\label{section}
+    
+    \section*{22}\label{section}
 
 It is the simplest possible model since it places a uniform probability
 mass over the entire space which is mathematically very nice.
@@ -639,39 +642,71 @@ over the entire space and so tries to spread the probability mass over
 the entire dataset space which could lead to the model being penalised
 by Bayes' Rule.
 
-    \subsubsection*{25}\label{section}
+    \section*{25}\label{section}
 
 We see that the sum of the evidence over the entire dataspace for every
 model is about 1. This is the expected outcome since we are essentially
 integrating our probability distribution to get the area under the curve
 which should sum to one.
-    \subsubsection*{26 and 27}\label{and-27}
-    \begin{center}
-    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_31_0.png}
-    \end{center}
-    { \hspace*{\fill} \\}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Model 0:  1.0
+Model 1:  0.994663485083
+Model 2:  1.00860166182
+Model 3:  0.932000999187
+
+    \end{Verbatim}
+
+    \section*{26 and 27}\label{and-27}
+
 
     \begin{center}
-    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_31_2.png}
+    \adjustimage{max size={0.45\linewidth}{0.45\paperheight}}{output_31_0.png}
     \end{center}
     { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+Model 0
+
+    \end{Verbatim}
 
     \begin{center}
-    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_31_4.png}
+    \adjustimage{max size={0.45\linewidth}{0.45\paperheight}}{output_31_2.png}
     \end{center}
     { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+Model 1
+
+    \end{Verbatim}
 
     \begin{center}
-    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_31_6.png}
+    \adjustimage{max size={0.45\linewidth}{0.45\paperheight}}{output_31_4.png}
     \end{center}
     { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+Model 2
+
+    \end{Verbatim}
 
     \begin{center}
-    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_31_8.png}
+    \adjustimage{max size={0.45\linewidth}{0.45\paperheight}}{output_31_6.png}
     \end{center}
     { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+Model 3
 
-    \subsubsection*{30}\label{section}
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.45\linewidth}{0.45\paperheight}}{output_31_8.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \section*{30}\label{section}
 
 Throughout this assignment, we have created and understood parametric
 and non-parametric models. We have learned the differences and uses of
@@ -682,7 +717,7 @@ machine learning, and provide a clearer picture of what everything does.
 
 
     % Add a bibliography block to the postdoc
-
-
-
+    
+    
+    
     \end{document}
