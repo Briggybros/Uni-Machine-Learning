@@ -13,24 +13,18 @@
 \documentclass[11pt]{article}
 
 
-
     \usepackage[T1]{fontenc}
     % Nicer default font (+ math font) than Computer Modern for most use cases
     \usepackage{mathpazo}
+    \usepackage{nips15submit_e}
 
     % Basic figure setup, for now with no caption control since it's done
     % automatically by Pandoc (which extracts ![](path) syntax from Markdown).
     \usepackage{graphicx}
-    \usepackage{grffile}
 
     % We will generate all images so they have a width \maxwidth. This means
     % that they will get their normal width if they fit onto the page, but
     % are scaled down if they would overflow the margins.
-    \makeatletter
-    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
-    \else\Gin@nat@width\fi}
-    \makeatother
-    \let\Oldincludegraphics\includegraphics
     % Set max figure width to be 80% of text width, for now hardcoded.
     \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
     % Ensure that by default, figures have no caption (until we provide a
@@ -55,21 +49,16 @@
     \usepackage{eurosym} % defines \euro
     \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
     \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
-    \usepackage{fancyvrb} % verbatim replacement that allows latex
     \usepackage{grffile} % extends the file name processing of package graphics
                          % to support a larger range
     % The hyperref package gives us a pdf with properly built
     % internal navigation ('pdf bookmarks' for the table of contents,
     % internal cross-reference links, web links for URLs, etc.)
     \usepackage{hyperref}
-    \usepackage{longtable} % longtable support required by pandoc >1.10
-    \usepackage{booktabs}  % table support for pandoc > 1.12.2
-    \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
     \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
                                 % normalem makes italics be italics, not underlines
-
-
-
+    \usepackage{wrapfig}
+    \usepackage{subcaption}
 
     % Colors for the hyperref package
     \definecolor{urlcolor}{rgb}{0,.145,.698}
@@ -98,7 +87,6 @@
     % extracted from the output of `pandoc -s`
     \providecommand{\tightlist}{%
       \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
     % Add ',fontsize=\small' for more characters per line
     \newenvironment{Shaded}{}{}
     \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
@@ -345,8 +333,10 @@ from the mean of the distribution. If we encode the preference using L1
 norm it will change the shape of out prior (Laplace distribution). The
 change in shape of prior would also change the value of learned
 paramaters since different priors mean different things.
-
-\includegraphics{./differntpriorshapes.png} On the left is a
+\begin{center}
+\adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{./differntpriorshapes.png}
+\end{center}
+On the left is a
 prior encoded using L2 norm and right is prior encoded using L1 norm
 
 As you can see in the image the shape of the prior determines the
@@ -450,8 +440,9 @@ x-axis stretches from positive to negative infinity, and so we have an
 infinite function space.
 
     \subsubsection*{10}\label{section}
-
-\includegraphics{q10.png}
+\begin{center}
+\adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{q10.png}
+\end{center}
 \[p(\boldsymbol{Y}, \boldsymbol{X}, f, \boldsymbol{\theta}) = p(\boldsymbol{X}) p(\boldsymbol{\theta}) p(f|\boldsymbol{X},\boldsymbol{\theta})p(\boldsymbol{Y}|f)\]
 Assumptions: - All X's are independent, shown by the
 \(k(\pmb X, \pmb X)\)
@@ -486,22 +477,21 @@ data point. On adding more data points the posterior starts to converge
 on the parameters and the functions move closer together and are very
 closely aligned to the direction of the data points.
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_14_0.png}
+    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_14_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    \begin{center}
+    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_14_1.png}
     \end{center}
     { \hspace*{\fill} \\}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_14_1.png}
+    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_14_2.png}
     \end{center}
     { \hspace*{\fill} \\}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_14_2.png}
-    \end{center}
-    { \hspace*{\fill} \\}
-
-    \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_14_3.png}
+    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_14_3.png}
     \end{center}
     { \hspace*{\fill} \\}
 
@@ -515,12 +505,12 @@ functions noisier as the covariance decreases.
 
 The length scale encodes the assumption of smoothness of the function.
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_16_0.png}
+    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_16_0.png}
     \end{center}
     { \hspace*{\fill} \\}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_16_1.png}
+    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_16_1.png}
     \end{center}
     { \hspace*{\fill} \\}
 
@@ -533,7 +523,7 @@ desirable since it means that where we see data the model fits to the
 data and where no data is present it is represented by our prior belief
 but also has a high uncertainity.
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_18_0.png}
+    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_18_0.png}
     \end{center}
     { \hspace*{\fill} \\}
 
@@ -635,7 +625,7 @@ the linear mapping of the data which means that what we are left with is
 the non-linear part of the Y which is a spiral since the non-linear part
 is described by {[}xsin(x), xcos(x){]}
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_26_2.png}
+    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_26_2.png}
     \end{center}
     { \hspace*{\fill} \\}
 
@@ -657,31 +647,31 @@ integrating our probability distribution to get the area under the curve
 which should sum to one.
     \subsubsection*{26 and 27}\label{and-27}
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_31_0.png}
+    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_31_0.png}
     \end{center}
     { \hspace*{\fill} \\}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_31_2.png}
+    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_31_2.png}
     \end{center}
     { \hspace*{\fill} \\}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_31_4.png}
+    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_31_4.png}
     \end{center}
     { \hspace*{\fill} \\}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_31_6.png}
+    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_31_6.png}
     \end{center}
     { \hspace*{\fill} \\}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_31_8.png}
+    \adjustimage{max size={0.5\linewidth}{0.5\paperheight}}{output_31_8.png}
     \end{center}
     { \hspace*{\fill} \\}
 
-    \subsubsection{30}\label{section}
+    \subsubsection*{30}\label{section}
 
 Throughout this assignment, we have created and understood parametric
 and non-parametric models. We have learned the differences and uses of
