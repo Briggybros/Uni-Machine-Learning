@@ -370,33 +370,15 @@ as the image quality decreases the more loops are applied.
 
 \subsubsection*{5}\label{section-2}
 
-The difference between the two different forms is that in a case where
-our \(p(x)\) is very unlikely, such as, using a very unfair coin, yet
-our approximation is \(q(x)\), a normal, fair coin, our \(q(x)/p(x)\)
-will produce a very large output (a large entropy) and therefore need
-lots of bits to model. On the other hand, with \(p(x)/q(x)\), you get a
-significantly smaller number, therefore a small entropy. As an example,
-the two representations differ as in one, we are seeing how suitable
-\(p(x)\) is to represent \(q(x)\), whilst vice versa in the other
-example.
+To reason about the difference between $KL(q(x)||p(x))$ and $KL(p(x)||q(x))$, we'll consider the specific case where we fix $p(x) = 0, q(x) > 0$. Using the definition of the KL Divergence, $KL(q(x)||p(x)) = \int q(x) log\frac{p(x)}{q(x)}$ we can compute that $$\lim_{p(x)\rightarrow 0}\, q(x) log \frac{p(x)}{q(x)} = -\infty$$ This would mean that if there is some region where we assign probability mass in $q(x)$ that $p(x)$ assigns no probability mass to, then the KL divergence will be of magnitude $\infty$.
 
-To reason about the difference between \(KL(q(x)||p(x))\) and
-\(KL(p(x)||q(x))\), we'll consider the specific case where we fix
-\(p(x) = 0, q(x) > 0\). Using the definition of the KL Divergence,
-\(KL(q(x)||p(x)) = \int q(x) log\frac{p(x)}{q(x)}\) we can compute that
-\[lim_{p(x)\rightarrow 0}\, q(x) log \frac{p(x)}{q(x)} = -\infty\] This
-would mean that if there is some region where we assign probability mass
-in \(q(x)\) that \(p(x)\) assigns no probability mass to, then the KL
-divergence will be of magnitude \(\infty\).
+On the otherhand, if we fix $p(x), q(x)$ as before, and calculate $KL(p(x)||q(x))$ we get a very different result. $$\lim_{p(x)\rightarrow 0} \, p(x) log \frac{q(x)}{p(x)} = 0$$ What this suggests is that if there is probability mass at q(x), but none at p(x), it doesn't make a difference to the disimilarity. Clearly we should only be interested in either $KL(q(x)||p(x))$ or $KL(p(x)||q(x))$ since the two (at least in this extreme case) tell us different information.
 
-On the otherhand, if we fix \(p(x), q(x)\) as before, and calculate
-\(KL(p(x)||q(x))\) we get a very different result.
-\[lim_{p(x)\rightarrow 0} \, p(x) log \frac{q(x)}{p(x)} = 0\] What this
-suggests is that if there is probability mass at q(x), but none at p(x),
-it doesn't make the two any less similar. NEEDS FININSHING (WILL DO
-TOMORROW)
-https://link.springer.com/content/pdf/10.1007\%2F978-3-642-00659-3.pdf
-\textless{}- helpful for this, pg 57
+Let's say $q(x)$ is a distribution based off emperical evidence and $p(x)$ is our model and we fix the values as before, then $KL(q(x)||p(x)) = \infty$. Intuitively this makes sense, if a region in the model has 0 probability mass and yet the evidence places probability mass there, it seems sensible to say the model is disimilar to the evidence and that it should be rejected. The alternative, makes little sense when treating $p(x)$ as a model and q(x) as evidence. We saw before that the evidence $q(x)$ placing probability mass where there is none in the model p(x) doesn't increase (or change) the KL divergence which seems wrong. 
+
+Taking that $KL(q(x)||p(x))$ is more useful for our purposes, we can also look at the example where $p(x)>0, q(x)=0$. In that case, if we took that case then we have $\lim_{q(x)\rightarrow 0} \, q(x) log \frac{p(x)}{q(x)} = 0$. This also makes sense, just because none of our evidence resulted in probability mass at that point, it doesn't mean our model is wrong. 
+
+A way you can think of this is if we made the statement "all pugs have red collars", the observation of just one pug without a red collar refutes that statement (ie the case where $KL(q(x)||p(x))=\infty$). On the otherhand, if we made the statement that "some pugs wear red collars" and didn't see any wearing red collars, we can't refute that statement (ie the case where $KL(q(x)||p(x))=0$).
 
 \subsubsection*{6}\label{section-3}
 
