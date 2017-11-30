@@ -278,7 +278,7 @@
     \maketitle
     { \hspace*{\fill} \\}
 
-
+    \section*{Q1}
     \begin{Verbatim}[commandchars=\\\{\}]
 2
 
@@ -303,7 +303,7 @@
 this clearly still isn't a "decent" image, but for the gaussian, the
 image is very close to the original.
 
-    \subsubsection*{Q2}\label{q2}
+    \section*{Q2}
 
     \begin{center}
     \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_7_0.png}
@@ -353,14 +353,14 @@ Number of iterations:  500000
     \end{center}
     { \hspace*{\fill} \\}
     
-    \subsubsection*{3}\label{section}
+    \section*{Q3}
 
 When looping randomly, the gaussian noise image seems to near enough
 recover the image perfectly in what appears to be one iteration, whilst
 the S\&P image seems to peak in quality at around the 500,000 iteration
 points. In this case, iterations are how many pixels are being updated.
 
-\subsubsection*{4}\label{section-1}
+\section*{Q4}
 
 As stated above, the image does not always improve, particularly with
 the salt and pepper image, after an optimal number of iterations, the
@@ -368,7 +368,7 @@ image declines back into a less-recognisable mess. The gaussian example
 shows detrimental effects from looping more than a nice amount of times,
 as the image quality decreases the more loops are applied.
 
-\subsubsection*{5}\label{section-2}
+\section*{Q5}
 
 To reason about the difference between $KL(q(x)||p(x))$ and $KL(p(x)||q(x))$, we'll consider the specific case where we fix $p(x) = 0, q(x) > 0$. Using the definition of the KL Divergence, $KL(q(x)||p(x)) = \int q(x) log\frac{p(x)}{q(x)}$ we can compute that $$\lim_{p(x)\rightarrow 0}\, q(x) log \frac{p(x)}{q(x)} = -\infty$$ This would mean that if there is some region where we assign probability mass in $q(x)$ that $p(x)$ assigns no probability mass to, then the KL divergence will be of magnitude $\infty$.
 
@@ -380,7 +380,7 @@ Taking that $KL(q(x)||p(x))$ is more useful for our purposes, we can also look a
 
 A way you can think of this is if we made the statement "all pugs have red collars", the observation of just one pug without a red collar refutes that statement (ie the case where $KL(q(x)||p(x))=\infty$). On the otherhand, if we made the statement that "some pugs wear red collars" and didn't see any wearing red collars, we can't refute that statement (ie the case where $KL(q(x)||p(x))=0$).
 
-\subsubsection*{6}\label{section-3}
+\section*{Q6}
 
     \begin{center}
     \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_10_0.png}
@@ -392,7 +392,7 @@ A way you can think of this is if we made the statement "all pugs have red colla
     \end{center}
     { \hspace*{\fill} \\}
     
-    \subsubsection*{7}\label{section}
+    \section*{Q7}
 
 The variational bayes method, as with the others, produces a good
 quality retrieval of the gaussian image, but unlike the others, produces
@@ -403,23 +403,21 @@ a fairly cleaner S\&P image.
     \end{center}
     { \hspace*{\fill} \\}
 
-    \subsubsection*{8}\label{section}
-
+    \section*{Q8}
     \begin{center}
     \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_14_0.png}
     \end{center}
     { \hspace*{\fill} \\}
 
-    \subsubsection*{9}\label{section}
-
-    \subsubsection*{10}\label{section}
+    \section*{Q9}
+    \section*{Q10}
 
     \begin{center}
     \adjustimage{max size={0.3\linewidth}{0.9\paperheight}}{plt0.png}
     \adjustimage{max size={0.3\linewidth}{0.9\paperheight}}{plt5.png}
     \adjustimage{max size={0.3\linewidth}{0.9\paperheight}}{plt10.png}
     \end{center}
-    Images are plt0, plt5 and plt10 respectively
+    Images are plt0, plt5 and plt10 respectively.
 
     
 

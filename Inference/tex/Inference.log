@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.22)  30 NOV 2017 23:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.10.22)  30 NOV 2017 23:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -570,6 +570,9 @@ LaTeX Warning: Label `section' multiply defined.
 
 LaTeX Warning: Label `section' multiply defined.
 
+
+LaTeX Warning: Label `section' multiply defined.
+
 )
 \openout1 = `Inference.aux'.
 
@@ -745,6 +748,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 279--280
 
  []
 
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 281.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 282.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -774,8 +779,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 306.
 <output_7_0.png, id=7, 1862.96pt x 559.08875pt>
 File: output_7_0.png Graphic file (type png)
 <use output_7_0.png>
@@ -791,7 +794,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--312
 
  []
 
-<output_7_1.png, id=17, 1862.96pt x 559.08875pt>
+<output_7_1.png, id=19, 1862.96pt x 559.08875pt>
 File: output_7_1.png Graphic file (type png)
 <use output_7_1.png>
 Package pdftex.def Info: output_7_1.png  used on input line 314. on input line 
@@ -803,7 +806,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
-<output_7_2.png, id=18, 1862.96pt x 559.08875pt>
+<output_7_2.png, id=20, 1862.96pt x 559.08875pt>
 File: output_7_2.png Graphic file (type png)
 <use output_7_2.png>
 Package pdftex.def Info: output_7_2.png  used on input line 319. on input line 
@@ -815,7 +818,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 321--322
 
  []
 
-<output_8_1.png, id=19, 1862.96pt x 559.08875pt>
+<output_8_1.png, id=21, 1862.96pt x 559.08875pt>
 File: output_8_1.png Graphic file (type png)
 <use output_8_1.png>
 Package pdftex.def Info: output_8_1.png  used on input line 330. on input line 
@@ -827,7 +830,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--333
 
  []
 
-<output_8_3.png, id=29, 1862.96pt x 559.08875pt>
+<output_8_3.png, id=30, 1862.96pt x 559.08875pt>
 File: output_8_3.png Graphic file (type png)
 <use output_8_3.png>
 Package pdftex.def Info: output_8_3.png  used on input line 342. on input line 
@@ -839,7 +842,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 344--345
 
  []
 
-<output_8_5.png, id=30, 1862.96pt x 559.08875pt>
+<output_8_5.png, id=31, 1862.96pt x 559.08875pt>
 File: output_8_5.png Graphic file (type png)
 <use output_8_5.png>
 Package pdftex.def Info: output_8_5.png  used on input line 352. on input line 
@@ -864,7 +867,7 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 8.33606pt on input line 373.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 6.25204pt on input line 373.
-<output_10_0.png, id=38, 1862.96pt x 559.08875pt>
+<output_10_0.png, id=39, 1862.96pt x 559.08875pt>
 File: output_10_0.png Graphic file (type png)
 <use output_10_0.png>
 Package pdftex.def Info: output_10_0.png  used on input line 386. on input line
@@ -876,7 +879,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 388--389
 
  []
 
-<output_10_1.png, id=52, 1862.96pt x 559.08875pt>
+<output_10_1.png, id=53, 1862.96pt x 559.08875pt>
 File: output_10_1.png Graphic file (type png)
 <use output_10_1.png>
 Package pdftex.def Info: output_10_1.png  used on input line 391. on input line
@@ -888,7 +891,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 393--394
 
  []
 
-<output_12_1.png, id=53, 1862.96pt x 500.87125pt>
+<output_12_1.png, id=54, 1862.96pt x 500.87125pt>
 File: output_12_1.png Graphic file (type png)
 <use output_12_1.png>
 Package pdftex.def Info: output_12_1.png  used on input line 402. on input line
@@ -900,57 +903,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 404--405
 
  []
 
-<output_14_0.png, id=54, 1883.035pt x 350.30875pt>
+<output_14_0.png, id=55, 1883.035pt x 350.30875pt>
 File: output_14_0.png Graphic file (type png)
 <use output_14_0.png>
-Package pdftex.def Info: output_14_0.png  used on input line 409. on input line
- 409.
+Package pdftex.def Info: output_14_0.png  used on input line 408. on input line
+ 408.
 Package pdftex.def Info: Requested size: 1883.03043pt x 350.30789pt on input li
-ne 409.
+ne 408.
 [5 <./output_10_0.png> <./output_10_1.png> <./output_12_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
  []
 
-<plt0.png, id=64, 2312.64pt x 1734.48pt>
+<plt0.png, id=65, 2312.64pt x 1734.48pt>
 File: plt0.png Graphic file (type png)
 <use plt0.png>
-Package pdftex.def Info: plt0.png  used on input line 418. on input line 418.
+Package pdftex.def Info: plt0.png  used on input line 416. on input line 416.
 Package pdftex.def Info: Requested size: 2312.63438pt x 1734.47578pt on input l
-ine 418.
-<plt5.png, id=65, 2312.64pt x 1734.48pt>
+ine 416.
+<plt5.png, id=66, 2312.64pt x 1734.48pt>
 File: plt5.png Graphic file (type png)
 <use plt5.png>
-Package pdftex.def Info: plt5.png  used on input line 419. on input line 419.
+Package pdftex.def Info: plt5.png  used on input line 417. on input line 417.
 Package pdftex.def Info: Requested size: 2312.63438pt x 1734.47578pt on input l
-ine 419.
-<plt10.png, id=66, 2312.64pt x 1734.48pt>
+ine 417.
+<plt10.png, id=67, 2312.64pt x 1734.48pt>
 File: plt10.png Graphic file (type png)
 <use plt10.png>
-Package pdftex.def Info: plt10.png  used on input line 420. on input line 420.
+Package pdftex.def Info: plt10.png  used on input line 418. on input line 418.
 Package pdftex.def Info: Requested size: 2312.63438pt x 1734.47578pt on input l
-ine 420.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 430.
+ine 418.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 428.
 [6 <./output_14_0.png> <./plt0.png> <./plt5.png> <./plt10.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 430.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 428.
 
 (./Inference.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 430.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 430.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 428.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 428.
 Package rerunfilecheck Info: File `Inference.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 430.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 428.
  ) 
 Here is how much of TeX's memory you used:
- 10892 strings out of 494931
- 162805 string characters out of 6180850
- 260410 words of memory out of 5000000
+ 10893 strings out of 494931
+ 162825 string characters out of 6180850
+ 260386 words of memory out of 5000000
  13964 multiletter control sequences out of 15000+600000
- 30938 words of font info for 85 fonts, out of 8000000 for 9000
+ 31869 words of font info for 86 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  36i,6n,38p,653b,380s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} </home/gregory/.t
@@ -962,10 +965,10 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/mathpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pal
 atino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Inference.pdf (6 pages, 1747476 bytes).
+Output written on Inference.pdf (6 pages, 1747538 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
+ 133 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
+ 17 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
