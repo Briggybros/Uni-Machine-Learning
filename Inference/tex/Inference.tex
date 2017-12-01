@@ -414,6 +414,10 @@ a fairly cleaner S\&P image.
     { \hspace*{\fill} \\}
 
     \section*{Q9}
+
+The VAE model has two parts, an encoding part and decoding part.
+The encoding step uses a neural network to approximate the function that can “compress” the data into a latent variable (z in the given code). The decoding step makes use of the parameters learned by the encoding to take an input that represents the desired image as its latent variable and returns the image. The special feature of a Variational Autoencoder is that the latent variable is constrained to be a Gaussian distribution. This factors into the loss function as it takes into account both the KL divergence of the latent variable distribution and a unit Gaussian, and the difference between the original image and generated image. It also makes use of the reparameterization trick and represents the latent variable as the mean and standard deviation of it’s distribution instead of real values so that it can optimise the model using gradient descent. This is useful in image denoising as we could potentially use the encoding step to get the latent variable representation of the noisy image and then use the decoder to generate a denoised image. The difference between VAE and Variational Bayes is that VAE can learn to generate different images based on the different latent variables.
+
     \section*{Q10}
 
     \begin{center}
