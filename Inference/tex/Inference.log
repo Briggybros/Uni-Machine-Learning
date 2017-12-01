@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.11.30)  1 DEC 2017 00:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.11.30)  1 DEC 2017 03:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -737,93 +737,93 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 <q1noise05.png, id=4, 1862.96pt x 559.08875pt>
 File: q1noise05.png Graphic file (type png)
 <use q1noise05.png>
-Package pdftex.def Info: q1noise05.png  used on input line 284. on input line 2
-84.
+Package pdftex.def Info: q1noise05.png  used on input line 285. on input line 2
+85.
 Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
-ne 284.
+ne 285.
 <q1noise05sp.png, id=6, 1862.96pt x 559.08875pt>
 File: q1noise05sp.png Graphic file (type png)
 <use q1noise05sp.png>
-Package pdftex.def Info: q1noise05sp.png  used on input line 285. on input line
- 285.
+Package pdftex.def Info: q1noise05sp.png  used on input line 286. on input line
+ 286.
 Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
-ne 285.
+ne 286.
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--286
+Underfull \hbox (badness 10000) in paragraph at lines 285--287
 [][]
  []
 
 <output_3_1.png, id=7, 1862.96pt x 559.08875pt>
 File: output_3_1.png Graphic file (type png)
 <use output_3_1.png>
-Package pdftex.def Info: output_3_1.png  used on input line 291. on input line 
-291.
-Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
-ne 291.
-<output_3_3.png, id=8, 1862.96pt x 559.08875pt>
-File: output_3_3.png Graphic file (type png)
-<use output_3_3.png>
-Package pdftex.def Info: output_3_3.png  used on input line 292. on input line 
+Package pdftex.def Info: output_3_1.png  used on input line 292. on input line 
 292.
 Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
 ne 292.
+<output_3_3.png, id=8, 1862.96pt x 559.08875pt>
+File: output_3_3.png Graphic file (type png)
+<use output_3_3.png>
+Package pdftex.def Info: output_3_3.png  used on input line 293. on input line 
+293.
+Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
+ne 293.
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--293
+Underfull \hbox (badness 10000) in paragraph at lines 292--294
 [][]
  []
 
 File: q1noise05.png Graphic file (type png)
 <use q1noise05.png>
-Package pdftex.def Info: q1noise05.png  used on input line 298. on input line 2
-98.
+Package pdftex.def Info: q1noise05.png  used on input line 299. on input line 2
+99.
 Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
-ne 298.
+ne 299.
 File: q1noise05sp.png Graphic file (type png)
 <use q1noise05sp.png>
-Package pdftex.def Info: q1noise05sp.png  used on input line 302. on input line
- 302.
+Package pdftex.def Info: q1noise05sp.png  used on input line 303. on input line
+ 303.
 Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
-ne 302.
+ne 303.
 <output_7_0.png, id=9, 1862.96pt x 559.08875pt>
 File: output_7_0.png Graphic file (type png)
 <use output_7_0.png>
-Package pdftex.def Info: output_7_0.png  used on input line 312. on input line 
-312.
+Package pdftex.def Info: output_7_0.png  used on input line 313. on input line 
+313.
 Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
-ne 312.
+ne 313.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./q1noise05.png> <./q1nois
 e05sp.png> <./output_3_1.png> <./output_3_3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
 <output_7_1.png, id=23, 1862.96pt x 559.08875pt>
 File: output_7_1.png Graphic file (type png)
 <use output_7_1.png>
-Package pdftex.def Info: output_7_1.png  used on input line 317. on input line 
-317.
+Package pdftex.def Info: output_7_1.png  used on input line 318. on input line 
+318.
 Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
-ne 317.
+ne 318.
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--320
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
 
  []
 
 <output_7_2.png, id=24, 1862.96pt x 559.08875pt>
 File: output_7_2.png Graphic file (type png)
 <use output_7_2.png>
-Package pdftex.def Info: output_7_2.png  used on input line 322. on input line 
-322.
+Package pdftex.def Info: output_7_2.png  used on input line 323. on input line 
+323.
 Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
-ne 322.
+ne 323.
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--325
+Underfull \hbox (badness 10000) in paragraph at lines 325--326
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 327.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 328.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -831,137 +831,139 @@ File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 <output_8_1.png, id=25, 1862.96pt x 559.08875pt>
 File: output_8_1.png Graphic file (type png)
 <use output_8_1.png>
-Package pdftex.def Info: output_8_1.png  used on input line 333. on input line 
-333.
+Package pdftex.def Info: output_8_1.png  used on input line 334. on input line 
+334.
 Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
-ne 333.
+ne 334.
  [2 <./output_7_0.png> <./output_7_1.png> <./output_7_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 335--336
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
 <output_8_3.png, id=35, 1862.96pt x 559.08875pt>
 File: output_8_3.png Graphic file (type png)
 <use output_8_3.png>
-Package pdftex.def Info: output_8_3.png  used on input line 345. on input line 
-345.
+Package pdftex.def Info: output_8_3.png  used on input line 346. on input line 
+346.
 Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
-ne 345.
+ne 346.
 
-Underfull \hbox (badness 10000) in paragraph at lines 347--348
+Underfull \hbox (badness 10000) in paragraph at lines 348--349
 
  []
 
 <output_8_5.png, id=36, 1862.96pt x 559.08875pt>
 File: output_8_5.png Graphic file (type png)
 <use output_8_5.png>
-Package pdftex.def Info: output_8_5.png  used on input line 355. on input line 
-355.
+Package pdftex.def Info: output_8_5.png  used on input line 356. on input line 
+356.
 Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
-ne 355.
+ne 356.
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 358--359
 
  []
 
 [3 <./output_8_1.png> <./output_8_3.png> <./output_8_5.png>]
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 376.
+(Font)              scaled to size 11.40997pt on input line 377.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 376.
+(Font)              scaled to size 8.33606pt on input line 377.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 376.
+(Font)              scaled to size 6.25204pt on input line 377.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 376.
+(Font)              scaled to size 11.40997pt on input line 377.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 376.
+(Font)              scaled to size 8.33606pt on input line 377.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 376.
+(Font)              scaled to size 6.25204pt on input line 377.
 <output_10_0.png, id=44, 1862.96pt x 559.08875pt>
 File: output_10_0.png Graphic file (type png)
 <use output_10_0.png>
-Package pdftex.def Info: output_10_0.png  used on input line 389. on input line
- 389.
+Package pdftex.def Info: output_10_0.png  used on input line 390. on input line
+ 390.
 Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
-ne 389.
+ne 390.
  [4]
-Underfull \hbox (badness 10000) in paragraph at lines 391--392
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
 
  []
 
 <output_10_1.png, id=58, 1862.96pt x 559.08875pt>
 File: output_10_1.png Graphic file (type png)
 <use output_10_1.png>
-Package pdftex.def Info: output_10_1.png  used on input line 394. on input line
- 394.
+Package pdftex.def Info: output_10_1.png  used on input line 395. on input line
+ 395.
 Package pdftex.def Info: Requested size: 1862.95547pt x 559.08737pt on input li
-ne 394.
+ne 395.
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 10000) in paragraph at lines 397--398
 
  []
 
 <output_12_1.png, id=59, 1862.96pt x 500.87125pt>
 File: output_12_1.png Graphic file (type png)
 <use output_12_1.png>
-Package pdftex.def Info: output_12_1.png  used on input line 405. on input line
- 405.
+Package pdftex.def Info: output_12_1.png  used on input line 408. on input line
+ 408.
 Package pdftex.def Info: Requested size: 1862.95547pt x 500.87001pt on input li
-ne 405.
+ne 408.
 
-Underfull \hbox (badness 10000) in paragraph at lines 407--408
+Underfull \hbox (badness 10000) in paragraph at lines 410--411
 
  []
 
 <output_14_0.png, id=60, 1883.035pt x 350.30875pt>
 File: output_14_0.png Graphic file (type png)
 <use output_14_0.png>
-Package pdftex.def Info: output_14_0.png  used on input line 411. on input line
- 411.
+Package pdftex.def Info: output_14_0.png  used on input line 413. on input line
+ 413.
 Package pdftex.def Info: Requested size: 1883.03043pt x 350.30789pt on input li
-ne 411.
+ne 413.
 [5 <./output_10_0.png> <./output_10_1.png> <./output_12_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 413--414
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
 
  []
 
-<plt0.png, id=70, 2312.64pt x 1734.48pt>
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+)
+<plt0.png, id=71, 2312.64pt x 1734.48pt>
 File: plt0.png Graphic file (type png)
 <use plt0.png>
-Package pdftex.def Info: plt0.png  used on input line 419. on input line 419.
+Package pdftex.def Info: plt0.png  used on input line 425. on input line 425.
 Package pdftex.def Info: Requested size: 2312.63438pt x 1734.47578pt on input l
-ine 419.
-<plt5.png, id=71, 2312.64pt x 1734.48pt>
+ine 425.
+<plt5.png, id=72, 2312.64pt x 1734.48pt>
 File: plt5.png Graphic file (type png)
 <use plt5.png>
-Package pdftex.def Info: plt5.png  used on input line 420. on input line 420.
+Package pdftex.def Info: plt5.png  used on input line 426. on input line 426.
 Package pdftex.def Info: Requested size: 2312.63438pt x 1734.47578pt on input l
-ine 420.
-<plt10.png, id=72, 2312.64pt x 1734.48pt>
+ine 426.
+<plt10.png, id=73, 2312.64pt x 1734.48pt>
 File: plt10.png Graphic file (type png)
 <use plt10.png>
-Package pdftex.def Info: plt10.png  used on input line 421. on input line 421.
+Package pdftex.def Info: plt10.png  used on input line 427. on input line 427.
 Package pdftex.def Info: Requested size: 2312.63438pt x 1734.47578pt on input l
-ine 421.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 431.
-[6 <./output_14_0.png> <./plt0.png> <./plt5.png> <./plt10.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 431.
-
-(./Inference.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 431.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 431.
+ine 427.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 437.
+ [6 <./output_14_0.png> <./plt0.png> <./plt5.png> <./plt10.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 437.
+ (./Inference.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 437.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 437.
 Package rerunfilecheck Info: File `Inference.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 431.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 437.
  ) 
 Here is how much of TeX's memory you used:
- 10901 strings out of 492990
- 163219 string characters out of 6135004
+ 11163 strings out of 492990
+ 166312 string characters out of 6135004
  265180 words of memory out of 5000000
- 14220 multiletter control sequences out of 15000+600000
+ 14479 multiletter control sequences out of 15000+600000
  31869 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,9n,38p,724b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,9n,38p,1417b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/
 fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
@@ -972,7 +974,7 @@ r.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/palatino/uplri8a.pfb>
-Output written on Inference.pdf (6 pages, 1877220 bytes).
+Output written on Inference.pdf (6 pages, 1879626 bytes).
 PDF statistics:
  120 PDF objects out of 1000 (max. 8388607)
  68 compressed objects within 1 object stream
