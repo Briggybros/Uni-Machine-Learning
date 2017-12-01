@@ -276,28 +276,31 @@
     
     
     \maketitle
-    { \hspace*{\fill} \\}
 
     \section*{Q1}
-    \begin{Verbatim}[commandchars=\\\{\}]
-2
 
-    \end{Verbatim}
+    \begin{figure}[h]
+    \begin{minipage}[b]{0.4\textwidth}
+        \adjustimage{max size={\linewidth}{0.9\paperheight}}{q1noise05.png}
+        \adjustimage{max size={\linewidth}{0.9\paperheight}}{q1noise05sp.png}
+    \end{minipage}
+    % { \hspace*{\fill} \\}
+
+
+    \begin{minipage}[b]{0.4\textwidth}
+    \adjustimage{max size={\linewidth}{0.9\paperheight}}{output_3_1.png}
+    \adjustimage{max size={\linewidth}{0.9\paperheight}}{output_3_3.png}
+    \end{minipage}
+    % { \hspace*{\fill} \\}
+    \end{figure}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_3_1.png}
+    \adjustimage{max size={0.5\linewidth}{0.9\paperheight}}{q1noise05.png}
     \end{center}
-    { \hspace*{\fill} \\}
-    
-    \begin{Verbatim}[commandchars=\\\{\}]
-4
-
-    \end{Verbatim}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_3_3.png}
+    \adjustimage{max size={0.5\linewidth}{0.9\paperheight}}{q1noise05sp.png}
     \end{center}
-    { \hspace*{\fill} \\}
     
     It takes 2 and 5 iterations respectively. For the salt and pepper image,
 this clearly still isn't a "decent" image, but for the gaussian, the
